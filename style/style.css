@@ -50,8 +50,8 @@ html {
 	background-image: url('wave_short_01.png');
 	bottom: 0;
 	left: 0;
-	animation: waveShort 1.5s linear 0s infinite normal;
-	animation-play-state: paused;
+	animation: waveShort 1s linear 0s infinite normal;
+	animation-play-state: running;
 }
 
 .wave:after {
@@ -69,16 +69,16 @@ html {
 	background-image: url('wave_short_02.png');
 	bottom: 1rem;
 	left: -3rem;
-	animation: waveShort 2s linear 0s infinite normal;
-	animation-play-state: paused;
+	animation: waveShort 1.5s linear 0s infinite normal;
+	animation-play-state: running;
 }
 
 .wave_long {
 	background-image: url('wave_long_01.jpg');
 	bottom: 0;
 	left: 0;
-	animation: waveLong 5s linear 0s infinite normal;
-	animation-play-state: paused;
+	animation: waveLong 4s linear 0s infinite normal;
+	animation-play-state: running;
 }
 
 .stopBtn {
