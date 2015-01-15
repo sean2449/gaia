@@ -26,16 +26,32 @@ html {
 	font-size: 28rem;
 }
 
+@keyframes waveShort {
+    from {background-position: 0px;}
+    to {background-position: -592px;}
+} 
+
+@keyframes waveLong {
+    from {background-position: 0px;}
+    to {background-position: -2470px;}
+}
+
 .wave {
 	position: absolute;
 	width: 118.3rem;
 	height: 33.6rem;
 }
 
+.container:hover .wave{
+	animation-play-state: running;
+}
+
 .wave1 {
 	background-image: url('wave_short_01.png');
 	bottom: 0;
 	left: 0;
+	animation: waveShort 1.5s linear 0s infinite normal;
+	animation-play-state: paused;
 }
 
 .wave:after {
@@ -53,12 +69,16 @@ html {
 	background-image: url('wave_short_02.png');
 	bottom: 1rem;
 	left: -3rem;
+	animation: waveShort 2s linear 0s infinite normal;
+	animation-play-state: paused;
 }
 
 .wave_long {
 	background-image: url('wave_long_01.jpg');
 	bottom: 0;
 	left: 0;
+	animation: waveLong 5s linear 0s infinite normal;
+	animation-play-state: paused;
 }
 
 .stopBtn {
