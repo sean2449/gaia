@@ -1,0 +1,68 @@
+html {
+	font-size: 10px;
+}
+
+.container {
+	margin-top: 10rem;
+	margin-right: 5rem;
+	width: 33.6rem;
+	height: 33.6rem;
+	background-color: #07CAB0;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	text-align: center;
+}
+
+.icon[data-icon] {
+	position: relative;
+	color: white;
+	display: inline-block;
+	line-height: 28rem;
+}
+
+.icon[data-icon]:before {
+	font-size: 28rem;
+}
+
+.wave {
+	position: absolute;
+	width: 118.3rem;
+	height: 33.6rem;
+}
+
+.wave1 {
+	background-image: url('wave_short_01.png');
+	bottom: 0;
+	left: 0;
+}
+
+.wave:after {
+	content: "Live TV";
+	position: absolute;
+	width: 33.6rem;
+	left: 0;
+	bottom: 5rem;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+}
+
+.wave2 {
+	background-image: url('wave_short_02.png');
+	bottom: 1rem;
+	left: -3rem;
+}
+
+.wave_long {
+	background-image: url('wave_long_01.jpg');
+	bottom: 0;
+	left: 0;
+}
+
+.stopBtn {
+	width: 10rem;
+	height: 10rem;
+	display: block;
+}
