@@ -37,12 +37,10 @@ function infiniteLeftAnimation(element, speed, period) {
   return stop;
 }
 
-var stop1 = infiniteLeftAnimation(document.getElementById('wave1'), 0.2, 296);
-var stop2 = infiniteLeftAnimation(document.getElementById('wave2'), 0.15, 296);
-var stopLong = infiniteLeftAnimation(document.getElementById('wave_long'), 0.15, 2470);
+var stop1 = infiniteLeftAnimation(document.getElementById('wave1'), 1, 296);
+var stop2 = infiniteLeftAnimation(document.getElementById('wave2'), 1, 296);
 
 function stop() {
   stop1();
   stop2();
-  stopLong();
 }
