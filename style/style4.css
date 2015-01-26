@@ -1,0 +1,25 @@
+.tv-animation-circle {
+  position: fixed;
+  z-index: 9999;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.tv-animation-circle.grow {
+  transform: scale(4, 4);
+  transition: transform 1s cubic-bezier(0.25, 0, 0 ,1);
+}
+
+.tv-animation-circle.grow.init {
+  transform: scale(0, 0);
+}
+
+.tv-animation-circle.shrink {
+  transform: scale(0, 0);
+  transition: transform 3s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.tv-animation-circle.shrink.init {
+  transform: scale(1, 1);
+}
+
