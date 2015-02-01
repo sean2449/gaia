@@ -162,10 +162,10 @@
     }
     this._injected = true;
     this.buildMenu(menu);
-    document.activeElement.blur();
-    this.scrollable.catchFocus();
     this.circleAnimation.play({type: 'grow'}, function() {
       this.element.classList.add('visible');
+      document.activeElement.blur();
+      this.scrollable.catchFocus();
     }.bind(this));
   },
 
@@ -186,6 +186,18 @@
       icon.classList.add(item.iconClass || 'icon');
       icon.style.backgroundImage = 'url(' + item.icon + ')';
     }
+
+    action.addEventListener('keydown', function(evt) {
+      // keydown event will trigger click event in HTML ButtonElement,
+      // which is not we want
+      evt.preventDefault();
+    });
+
+    action.addEventListener('keyup', function(evt) {
+      if (evt.target === action) {
+        action.click();
+      }
+    });
 
     action.addEventListener('click', function(evt) {
       if (self.hide(evt)) {
